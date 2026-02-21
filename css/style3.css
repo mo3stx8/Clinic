@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-color: #fff;
+  --second-color: #ffffff;
+  --black-color: #000000;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(23%2c 107%2c 135%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c489.827C99.709%2c477.912%2c201.129%2c496.281%2c293.241%2c456.292C395.779%2c411.777%2c509.387%2c355.312%2c549.861%2c251.113C590.124%2c147.456%2c499.412%2c39.551%2c498.308%2c-71.646C496.954%2c-208.094%2c610.33%2c-351.737%2c542.702%2c-470.254C476.779%2c-585.784%2c311.981%2c-590.636%2c183.189%2c-623.886C58.379%2c-656.108%2c-73.938%2c-707.547%2c-193.918%2c-660.425C-311.762%2c-614.142%2c-382.414%2c-493.397%2c-438.308%2c-379.796C-485.404%2c-284.075%2c-468.757%2c-175.172%2c-484.579%2c-69.672C-500.525%2c36.654%2c-556.461%2c138.19%2c-531.682%2c242.811C-504.552%2c357.361%2c-448.789%2c482.608%2c-342.029%2c532.208C-235.689%2c581.613%2c-116.428%2c503.74%2c0%2c489.827' fill='%23114f64'%3e%3c/path%3e%3cpath d='M1440 989.044C1528.052 995.9 1625.126 1011.365 1698.146 961.683 1770.853 912.213 1781.622 812.686 1817.32 732.316 1852.59 652.909 1911.814 579.666 1906.343 492.95 1900.719 403.822 1841.778 329.812 1787.452 258.931 1730.124 184.13299999999998 1675.622 91.03300000000002 1583.406 71.60500000000002 1491.696 52.28399999999999 1405.714 117.24700000000001 1322.858 161.05200000000002 1254.103 197.402 1202.522 252.214 1144.286 303.762 1076.04 364.171 959.539 398.978 951.5 489.764 943.351 581.787 1061.355 631.9 1108.1779999999999 711.538 1148.451 780.034 1145.5059999999999 872.424 1206.458 923.399 1269.771 976.348 1357.713 982.637 1440 989.044' fill='%231d87aa'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box {
+  position: relative;
+  width: 450px;
+  backdrop-filter: blur(25px);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 7.5em 2.5em 4em 2.5em;
+  color: var(--second-color);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 140px;
+  height: 70px;
+  border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+  font-size: 30px;
+  color: var(--black-color);
+}
+
+.login-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 50%;
+  background: transparent;
+  box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.login-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 50%;
+  background: transparent;
+  box-shadow: -15px 0 0 0 var(--primary-color); /* Removed space before --primary-color */
+}
+
+.input_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.input-field {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  background: transparent;
+  color: var(--second-color);
+  padding-inline: 20px 50px;
+  border: 2px solid var(--primary-color);
+  border-radius: 30px;
+  outline: none;
+}
+
+#user {
+  margin-bottom: 10px;
+}
+
+.label {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: 0.2s;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid .label {
+  /* Added missing closing brace here */
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  color: var(--black-color);
+  padding: 0 10px;
+} /* Closed the missing brace */
+
+.icon {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 20px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.input-submit {
+  width: 100%;
+  height: 50px;
+  background: #ececec;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-submit:hover {
+  background: var(--second-color);
+}
+
+.register {
+  text-align: center;
+}
+
+.register a {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 564px) {
+  .wrapper {
+    padding: 20px;
+  }
+
+  .login_box {
+    padding: 7.5em 1.5em 4em 1.5em;
+  }
+}
+
+#backBotton{
+  width: 6%;
+  position: fixed;
+  transform: rotate(270deg);
+  top: 0;
+}

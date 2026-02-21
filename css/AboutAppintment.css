@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0%;
+}
+
+header {
+    text-align: center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(23%2c 107%2c 135%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c489.827C99.709%2c477.912%2c201.129%2c496.281%2c293.241%2c456.292C395.779%2c411.777%2c509.387%2c355.312%2c549.861%2c251.113C590.124%2c147.456%2c499.412%2c39.551%2c498.308%2c-71.646C496.954%2c-208.094%2c610.33%2c-351.737%2c542.702%2c-470.254C476.779%2c-585.784%2c311.981%2c-590.636%2c183.189%2c-623.886C58.379%2c-656.108%2c-73.938%2c-707.547%2c-193.918%2c-660.425C-311.762%2c-614.142%2c-382.414%2c-493.397%2c-438.308%2c-379.796C-485.404%2c-284.075%2c-468.757%2c-175.172%2c-484.579%2c-69.672C-500.525%2c36.654%2c-556.461%2c138.19%2c-531.682%2c242.811C-504.552%2c357.361%2c-448.789%2c482.608%2c-342.029%2c532.208C-235.689%2c581.613%2c-116.428%2c503.74%2c0%2c489.827' fill='%23114f64'%3e%3c/path%3e%3cpath d='M1440 989.044C1528.052 995.9 1625.126 1011.365 1698.146 961.683 1770.853 912.213 1781.622 812.686 1817.32 732.316 1852.59 652.909 1911.814 579.666 1906.343 492.95 1900.719 403.822 1841.778 329.812 1787.452 258.931 1730.124 184.13299999999998 1675.622 91.03300000000002 1583.406 71.60500000000002 1491.696 52.28399999999999 1405.714 117.24700000000001 1322.858 161.05200000000002 1254.103 197.402 1202.522 252.214 1144.286 303.762 1076.04 364.171 959.539 398.978 951.5 489.764 943.351 581.787 1061.355 631.9 1108.1779999999999 711.538 1148.451 780.034 1145.5059999999999 872.424 1206.458 923.399 1269.771 976.348 1357.713 982.637 1440 989.044' fill='%231d87aa'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    padding: 100px;
+    width: 100%;
+    padding-bottom: 0;
+    border-radius: 0 0 40% 4%;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+
+}
+
+header h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 7px;
+}
+
+
+.title {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 40%;
+   
+    margin-left: 30.2%;
+    margin-top: 30px;
+}
+
+.title img {
+    width: 20%;
+    height: 20%;
+    float: right;
+}
+
+.discribe {
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.discribe h2 {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    clear: left;
+    font-size: 80px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+
+.search-bar {
+    margin-top: 25px;
+    width: 40%;
+    border: 0;
+    padding: 15px;
+    display: inline;
+    margin: 2%;
+    outline: none !important;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+nav {
+    background-color: #176B87;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    width: 60%;
+    margin: 20px;
+    background: transparent;
+    background-color: #176B87;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    border-radius: 15px;
+    box-shadow: -8px 8px 20px #07567184;
+    top: 20px;
+    z-index: 10;
+
+}
+
+nav a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 5px;
+    text-align: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+#icon {
+    width: 39px;
+    padding-bottom: -9px;
+    margin-top: -9px;
+    margin-bottom: -9px;
+
+
+}
+
+#icon1 {
+    margin-bottom: 5px;
+}
+
+
+a:hover {
+    background-color: #ffffff;
+    color: #176B87;
+    border-radius: 10px;
+}
+
+
+
+#iconlogo {
+    width: 40px;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+
+}
+
+main {
+    margin-top: 1%;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 34px;
+    color: #176B87;
+    margin-left: 40px;
+    margin-top: 1%;
+    padding-left: 10px;
+    border-left: solid 5px;
+    border-radius: 4px 4px;
+    display: inline;
+}
+
+main p {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 20px;
+    color: #176B87;
+}
+
+main ul {
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 2px;
+    margin-left: 100px;
+    color: #176B87;
+}
+
+footer {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(23%2c 107%2c 135%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c489.827C99.709%2c477.912%2c201.129%2c496.281%2c293.241%2c456.292C395.779%2c411.777%2c509.387%2c355.312%2c549.861%2c251.113C590.124%2c147.456%2c499.412%2c39.551%2c498.308%2c-71.646C496.954%2c-208.094%2c610.33%2c-351.737%2c542.702%2c-470.254C476.779%2c-585.784%2c311.981%2c-590.636%2c183.189%2c-623.886C58.379%2c-656.108%2c-73.938%2c-707.547%2c-193.918%2c-660.425C-311.762%2c-614.142%2c-382.414%2c-493.397%2c-438.308%2c-379.796C-485.404%2c-284.075%2c-468.757%2c-175.172%2c-484.579%2c-69.672C-500.525%2c36.654%2c-556.461%2c138.19%2c-531.682%2c242.811C-504.552%2c357.361%2c-448.789%2c482.608%2c-342.029%2c532.208C-235.689%2c581.613%2c-116.428%2c503.74%2c0%2c489.827' fill='%23114f64'%3e%3c/path%3e%3cpath d='M1440 989.044C1528.052 995.9 1625.126 1011.365 1698.146 961.683 1770.853 912.213 1781.622 812.686 1817.32 732.316 1852.59 652.909 1911.814 579.666 1906.343 492.95 1900.719 403.822 1841.778 329.812 1787.452 258.931 1730.124 184.13299999999998 1675.622 91.03300000000002 1583.406 71.60500000000002 1491.696 52.28399999999999 1405.714 117.24700000000001 1322.858 161.05200000000002 1254.103 197.402 1202.522 252.214 1144.286 303.762 1076.04 364.171 959.539 398.978 951.5 489.764 943.351 581.787 1061.355 631.9 1108.1779999999999 711.538 1148.451 780.034 1145.5059999999999 872.424 1206.458 923.399 1269.771 976.348 1357.713 982.637 1440 989.044' fill='%231d87aa'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    ;
+    margin-top: 40px;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    gap: 10%;
+
+}
+
+.footer-section {
+    display: inline-block;
+    width: 33.%;
+    vertical-align: top;
+    padding: 10px;
+
+
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-left: solid 5px;
+    border-radius: 4px 4px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+
+    list-style: none;
+    color: white;
+
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.footer-section li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+
+    color: #176B87;
+    border-radius: 2px;
+}
+
+.Social {
+    width: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Social:hover {
+    cursor: pointer;
+    background-color: #176B87;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.copyright {
+    width: 70%;
+    display: block;
+}
+
+.copyright p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.671);
+}
